@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "formidable": "^3.5.3",
+    "fs": "^0.0.1-security",
+    "pdf-lib": "^1.17.1",
+    "sharp": "^0.34.1"
+  }
+}
