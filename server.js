@@ -31,9 +31,8 @@ app.post("/api/convert", (req, res) => {
       for (const file of uploadedFiles) {
         const buffer = fs.readFileSync(file.filepath);
 
-  
         const mimeType = file.mimetype;
-        if (!["image/jpeg", "image/png"].includes(mimeType)) {
+        if (!["image/jpeg", "image/png", "image/jpg"].includes(mimeType)) {
           console.error(`Unsupported file type: ${mimeType}`);
           return res.status(400).json({ error: `Unsupported file type: ${mimeType}` });
         }
